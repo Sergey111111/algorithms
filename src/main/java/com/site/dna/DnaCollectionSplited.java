@@ -91,6 +91,9 @@ public class DnaCollectionSplited implements Iterable {
 
             @Override
             public Integer next() {
+                if (!hasNext()) {
+                    throw new NoSuchElementException();
+                }
                 return iteratorStorage.poll();
             }
         };
