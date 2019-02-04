@@ -37,8 +37,8 @@ public class TermCounter {
      * @return
      */
     public int size() {
-        // TODO: FILL THIS IN!
-        return 0;
+
+        return map == null ? -1: map.size();
     }
 
     /**
